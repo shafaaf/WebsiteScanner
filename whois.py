@@ -10,12 +10,15 @@
 import os
 
 def get_whois(url):
+	print "\nRunning get_whois for: {}".format(url)
 	command = "whois " + url
 	process = os.popen(command)
 	results = str(process.read())
+	#print "results is: {}".format(results)
 	return results
 
 # Example program
-domainName = "developersfoundation.ca"
-print "Running whois test program for: {}".format(domainName)
-print "whois says: \n{}".format(get_whois(domainName))
+if __name__ == "__main__":
+	domainName = "developersfoundation.ca"
+	print "Running whois test program for: {}".format(domainName)
+	print "whois says: \n{}".format(get_whois(domainName))

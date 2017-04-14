@@ -13,14 +13,16 @@ import urllib
 import requests
 
 
-def get_robots_txt(url):
+def get_robots_text(url):
+	print "\nRunning get_robots_text for url: {}".format(url)
 	if url.endswith('/'):
 		path = url
 	else:
 		path = url + '/'
 
 	r = requests.get(path + "robots.txt")
-	#print "r.content is: {}".format(r.content) 
+	#print "r.content is: \n{}".format(r.content) 
 	return r.content
-	
-print get_robots_txt("http://www.reddit.com")
+
+if __name__ == "__main__":
+	print get_robots_text("http://www.reddit.com")
