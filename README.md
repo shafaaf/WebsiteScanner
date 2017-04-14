@@ -2,4 +2,4 @@
 Gives detailed scan of website
 
 ## To run,
-''' python main.py '''
+``` python main.py ```
