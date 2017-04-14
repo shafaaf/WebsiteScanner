@@ -1,1 +1,2 @@
-# WebsiteScanner
+# Website Scanner
+Scans website

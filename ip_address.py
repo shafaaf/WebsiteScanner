@@ -1,6 +1,11 @@
 import os
 
 # "host url" gives IP Address of the url
+
+# The Linux host command is used to find out 
+# the IP address for a domain. It can also be 
+# used to find the domain name for an IP address.
+
 def get_ip_address(url):
 	command = "host " + url
 	# open a new process to run the command
@@ -14,4 +19,4 @@ def get_ip_address(url):
 # Example program
 domainName = "google.com"
 print "Running get_ip_address test program for: {}".format(domainName)
-print "ipAddress is: {}".format(get_ip_address(domainName))
+print "ipAddress for {} is: {}".format(domainName, get_ip_address(domainName))
