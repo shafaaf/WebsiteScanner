@@ -1,5 +1,5 @@
 # Website Scanner
-Scans website
+Gives detailed scan of website
 
-To run,
-python main.py
+## To run,
+''' python main.py '''
