@@ -146,4 +146,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# folders
+companies/
+
 # End of https://www.gitignore.io/api/macos,windows,python
